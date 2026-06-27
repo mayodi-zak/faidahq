@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>FaidaHQ - Our Projects</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta
+         content="web development projects, automation, USSD, AI integration, portfolio"
+         name="keywords"
+      />
+      <meta
+         content="Browse our portfolio of web development, automation, USSD, and mobile projects."
+         name="description"
+      />
+
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Icon Font Stylesheet -->
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+         rel="stylesheet"
+      />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+         rel="stylesheet"
+      />
+
+      <!-- Libraries Stylesheet -->
+      <link href="/lib/animate/animate.min.css" rel="stylesheet" />
+
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+      <!-- Template Stylesheet -->
+      <link href="/css/style.css" rel="stylesheet" />
+   </head>
+
+   <body>
+      <!-- Spinner Start -->
+      <div
+         id="spinner"
+         class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+         <div class="spinner-grow text-primary" role="status"></div>
+      </div>
+      <!-- Spinner End -->
+
+      <faidahq-navbar active="projects"></faidahq-navbar>
+      <!-- Page Header Start -->
+      <div class="container-fluid page-header py-5">
+         <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">
+               Our Work
+            </h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+               <ol class="breadcrumb justify-content-center mb-0">
+                  <li class="breadcrumb-item"><a href="/">Home</a></li>
+                  <li class="breadcrumb-item" aria-current="page">Projects</li>
+               </ol>
+            </nav>
+         </div>
+      </div>
+      <!-- Page Header End -->
+
+      <!-- Projects Start -->
+      <div class="container-fluid py-5 my-5">
+         <div class="container">
+            <div
+               class="text-center mx-auto pb-5 wow fadeIn"
+               data-wow-delay=".3s"
+               style="max-width: 600px"
+            >
+               <h5 class="text-primary">Portfolio</h5>
+               <h1>Projects Built Across Every Service</h1>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div
+               class="d-flex flex-wrap justify-content-center gap-2 mb-5 wow fadeIn"
+               data-wow-delay=".3s"
+            >
+               <button
+                  class="btn btn-primary rounded-pill px-4 filter-btn active"
+                  data-filter="all"
+               >
+                  All
+               </button>
+               <button
+                  class="btn btn-outline-primary rounded-pill px-4 filter-btn"
+                  data-filter="web-development"
+               >
+                  Web Development
+               </button>
+               <button
+                  class="btn btn-outline-primary rounded-pill px-4 filter-btn"
+                  data-filter="automation"
+               >
+                  Automation
+               </button>
+               <button
+                  class="btn btn-outline-primary rounded-pill px-4 filter-btn"
+                  data-filter="ussd"
+               >
+                  USSD
+               </button>
+               <button
+                  class="btn btn-outline-primary rounded-pill px-4 filter-btn"
+                  data-filter="mobile"
+               >
+                  Mobile
+               </button>
+            </div>
+
+            <!-- Project Cards -->
+            <div class="row g-5" id="projects-grid">
+               <!-- Automation System -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".3s"
+                  data-category="automation"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/automation-system.png"
+                        alt="Automation System"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Automation System</h5>
+                        <p class="text-muted mb-3">
+                           Streamlines workflow by fetching data from Airtable
+                           into Google Sheets, processing it via automation, and
+                           sending it back.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">Airtable</span>
+                           <span class="badge bg-secondary me-1"
+                              >Google Sheets</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Automation</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://mayodi.help"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Web Scraping Bot -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".5s"
+                  data-category="automation"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/web-scraping-bot.png"
+                        alt="Web Scraping Bot"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Web Scraping Bot</h5>
+                        <p class="text-muted mb-3">
+                           A bot developed with Selenium and Beautiful Soup to
+                           scrape dynamic websites.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">Selenium</span>
+                           <span class="badge bg-secondary me-1"
+                              >BeautifulSoup</span
+                           >
+                           <span class="badge bg-secondary me-1">Python</span>
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://mayodi.help"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Writers Management Platform -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".7s"
+                  data-category="web-development"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/writers-management-platform.png"
+                        alt="Writers Management Platform"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Writers Management Platform</h5>
+                        <p class="text-muted mb-3">
+                           A fullstack platform for managing writers and editors
+                           for writing jobs.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >Fullstack</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Management</span
+                           >
+                           <span class="badge bg-secondary me-1">Platform</span>
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://mayodi.help"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- USSD Application -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".3s"
+                  data-category="ussd"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/ussd-application.png"
+                        alt="USSD Application"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">USSD Application</h5>
+                        <p class="text-muted mb-3">
+                           An evolving application providing lightweight
+                           record-keeping services to streamline small business
+                           activities.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">USSD</span>
+                           <span class="badge bg-secondary me-1"
+                              >Record-Keeping</span
+                           >
+                           <span class="badge bg-secondary me-1">Mobile</span>
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://mayodi.help"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Kaimosi Friends School -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".5s"
+                  data-category="web-development"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/kfsc-website.png"
+                        alt="Kaimosi Friends School Website"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Kaimosi Friends School</h5>
+                        <p class="text-muted mb-3">
+                           A statically generated school website hosted on
+                           Truehost.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >Static Site</span
+                           >
+                           <span class="badge bg-secondary me-1">HTML</span>
+                           <span class="badge bg-secondary me-1"
+                              >JavaScript</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://kfcs.sc.ke"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- BiasharaThrive -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".5s"
+                  data-category="mobile"
+               >
+                  <div class="services-item bg-light h-100">
+                     <div
+                        class="d-flex align-items-center justify-content-center bg-light rounded-top"
+                        style="height: 200px; padding: 28px"
+                     >
+                        <img
+                           src="/img/biasharathrive-icon.png"
+                           alt="BiasharaThrive"
+                           class="img-fluid"
+                           style="
+                              max-height: 144px;
+                              max-width: 144px;
+                              object-fit: contain;
+                           "
+                        />
+                     </div>
+                     <div class="p-4">
+                        <h5 class="mb-2">BiasharaThrive</h5>
+                        <p class="text-muted mb-3">
+                           Offline-first business management app for small
+                           businesses. Manage inventory, sales, and records —
+                           works without internet. Available on Windows and
+                           Android.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">Flutter</span>
+                           <span class="badge bg-secondary me-1"
+                              >Offline-First</span
+                           >
+                           <span class="badge bg-secondary me-1">Windows</span>
+                           <span class="badge bg-secondary me-1">Android</span>
+                           <span class="badge bg-secondary me-1"
+                              >Business Management</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://apps.microsoft.com/store/detail/9NLFLW2FP3JR?cid=DevShareMCLPCB"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                           >
+                              <i class="fab fa-windows me-1"></i>Desktop Version
+                           </a>
+                           <a
+                              href="https://play.google.com/apps/internaltest/4701414508854568246"
+                              target="_blank"
+                              class="btn btn-outline-secondary btn-sm rounded-pill"
+                           >
+                              <i class="fab fa-google-play me-1"></i>Mobile
+                              Version
+                              <span
+                                 class="badge bg-warning text-dark ms-1"
+                                 style="font-size: 0.6rem"
+                                 >Beta</span
+                              >
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- 2D Shooter Game -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".7s"
+                  data-category="mobile"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/2d-shooter-game.png"
+                        alt="2D Shooter Game"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">2D Shooter Game</h5>
+                        <p class="text-muted mb-3">
+                           A JavaScript-based 2D shooter game created using
+                           HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >JavaScript</span
+                           >
+                           <span class="badge bg-secondary me-1">HTML</span>
+                           <span class="badge bg-secondary me-1">Game Dev</span>
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://mayodi.help"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Tranquil Hospitals -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".3s"
+                  data-category="web-development"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/tranquil-website.png"
+                        alt="Tranquil Hospitals Ltd"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Tranquil Hospitals Ltd</h5>
+                        <p class="text-muted mb-3">
+                           A statically generated hospital website hosted on
+                           Truehost.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >Static Site</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Healthcare</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >JavaScript</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://thetranquilhospitalsltd.co.ke"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Broadpack Hotels -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".5s"
+                  data-category="web-development"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/broadpack.png"
+                        alt="Broadpack Hotels"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Broadpack Hotels</h5>
+                        <p class="text-muted mb-3">
+                           Modern hotel booking and management website with room
+                           reservations, amenities showcase, and customer
+                           service integration.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >Hospitality</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Booking System</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Web Development</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://broadparkhotels.co.ke"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Mungoma Hospital -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".7s"
+                  data-category="web-development"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/mungoma.png"
+                        alt="Mungoma Hospital"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Mungoma Hospital</h5>
+                        <p class="text-muted mb-3">
+                           Comprehensive hospital website with medical services,
+                           departments, patient care facilities, and online
+                           appointment scheduling.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >Healthcare</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Medical Services</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Web Development</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://mungomahospitals.co.ke"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Tamuz Electricals -->
+               <div
+                  class="col-12 col-md-6 col-lg-4 project-card wow fadeIn"
+                  data-wow-delay=".3s"
+                  data-category="web-development"
+               >
+                  <div class="services-item bg-light h-100">
+                     <img
+                        src="/img/tamuz.png"
+                        alt="Tamuz Electricals Ecommerce"
+                        class="w-100 rounded-top"
+                        style="height: 200px; object-fit: cover"
+                     />
+                     <div class="p-4">
+                        <h5 class="mb-2">Tamuz Electricals Ecommerce</h5>
+                        <p class="text-muted mb-3">
+                           Fully functional ecommerce platform for electrical
+                           products with product catalog, shopping cart, secure
+                           checkout, and inventory management.
+                        </p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1"
+                              >Ecommerce</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Online Store</span
+                           >
+                           <span class="badge bg-secondary me-1"
+                              >Web Development</span
+                           >
+                        </div>
+                        <div class="d-flex gap-2 flex-wrap">
+                           <a
+                              href="https://tamuzelectricals.co.ke"
+                              target="_blank"
+                              class="btn btn-primary btn-sm rounded-pill"
+                              >View Live</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /Project Cards -->
+         </div>
+      </div>
+      <!-- Projects End -->
+
+      <faidahq-footer></faidahq-footer>
+      <!-- Back to Top -->
+      <a
+         href="#"
+         class="btn btn-secondary btn-square rounded-circle back-to-top"
+         ><i class="fa fa-arrow-up text-white"></i
+      ></a>
+
+      <!-- JavaScript Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/lib/wow/wow.min.js"></script>
+      <script src="/lib/easing/easing.min.js"></script>
+      <script src="/lib/waypoints/waypoints.min.js"></script>
+
+      <!-- Template Javascript -->
+      <!-- Web Components -->
+      <script src="/js/components.js"></script>
+      <script src="/js/main.js"></script>
+
+      <!-- Project Filter -->
+      <script>
+         document.querySelectorAll('.filter-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+               var filter = this.getAttribute('data-filter');
+
+               // Update active button
+               document.querySelectorAll('.filter-btn').forEach(function (b) {
+                  b.classList.remove('active', 'btn-primary');
+                  b.classList.add('btn-outline-primary');
+               });
+               this.classList.add('active', 'btn-primary');
+               this.classList.remove('btn-outline-primary');
+
+               // Show/hide cards
+               document
+                  .querySelectorAll('.project-card')
+                  .forEach(function (card) {
+                     if (
+                        filter === 'all' ||
+                        card.getAttribute('data-category') === filter
+                     ) {
+                        card.style.display = '';
+                     } else {
+                        card.style.display = 'none';
+                     }
+                  });
+            });
+         });
+      </script>
+   </body>
+</html>

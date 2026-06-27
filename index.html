@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>FaidaHQ - Your Business Operating System</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta
+         content="business OS, inventory management, sales tracking, AI business agent, e-commerce"
+         name="keywords"
+      />
+      <meta
+         content="FaidaHQ is the all-in-one business operating system. Sell more, automate the boring stuff, and always know your numbers."
+         name="description"
+      />
+
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- Icon Font Stylesheet -->
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+         rel="stylesheet"
+      />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+         rel="stylesheet"
+      />
+
+      <!-- Libraries Stylesheet -->
+      <link href="/lib/animate/animate.min.css" rel="stylesheet" />
+
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+      <!-- Template Stylesheet -->
+      <link href="/css/style.css" rel="stylesheet" />
+   </head>
+
+   <body>
+      <!-- Spinner Start -->
+      <div
+         id="spinner"
+         class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+         <div class="spinner-grow text-primary" role="status"></div>
+      </div>
+      <!-- Spinner End -->
+
+      
+      <faidahq-navbar active="home"></faidahq-navbar>
+      <!-- Carousel Start -->
+      <div class="container-fluid px-0">
+         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+               <li
+                  data-bs-target="#carouselId"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="First slide"
+               ></li>
+               <li
+                  data-bs-target="#carouselId"
+                  data-bs-slide-to="1"
+                  aria-label="Second slide"
+               ></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+               <div class="carousel-item active">
+                  <img
+                     src="/img/carousel-1.jpg"
+                     class="img-fluid"
+                     alt="FaidaHQ Business OS"
+                  />
+                  <div class="carousel-caption">
+                     <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">
+                           The All-in-One Business OS
+                        </h6>
+                        <h1
+                           class="text-white display-1 mb-4 animated fadeInRight"
+                        >
+                           One Platform. Every Part of Your Business.
+                        </h1>
+                        <p
+                           class="mb-4 text-white fs-5 animated fadeInDown d-none d-md-block"
+                        >
+                           Sell more, spend less time on admin, and always know
+                           your numbers. FaidaHQ runs your whole business — from
+                           inventory to invoices.
+                        </p>
+                        <div class="carousel-btns">
+                           <a href="/service/" class="me-2"
+                              ><button
+                                 type="button"
+                                 class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft"
+                              >
+                                 See What We Do
+                              </button></a
+                           >
+                           <a href="/contact/" class="ms-2"
+                              ><button
+                                 type="button"
+                                 class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight"
+                              >
+                                 Get Started Free
+                              </button></a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img
+                     src="/img/carousel-2.jpg"
+                     class="img-fluid"
+                     alt="FaidaHQ - Run smarter"
+                  />
+                  <div class="carousel-caption">
+                     <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">
+                           Built for Modern Business
+                        </h6>
+                        <h1
+                           class="text-white display-1 mb-4 animated fadeInLeft"
+                        >
+                           Your Business HQ. Every Profit, Every Day.
+                        </h1>
+                        <p
+                           class="mb-4 text-white fs-5 animated fadeInDown d-none d-md-block"
+                        >
+                           From inventory to invoices, social media to staff —
+                           FaidaHQ handles the operations so you can focus on
+                           growth.
+                        </p>
+                        <div class="carousel-btns">
+                           <a href="/service/" class="me-2"
+                              ><button
+                                 type="button"
+                                 class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft"
+                              >
+                                 Explore Features
+                              </button></a
+                           >
+                           <a href="/contact/" class="ms-2"
+                              ><button
+                                 type="button"
+                                 class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight"
+                              >
+                                 Try FaidaHQ
+                              </button></a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button
+               class="carousel-control-prev"
+               type="button"
+               data-bs-target="#carouselId"
+               data-bs-slide="prev"
+            >
+               <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+               ></span>
+               <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+               class="carousel-control-next"
+               type="button"
+               data-bs-target="#carouselId"
+               data-bs-slide="next"
+            >
+               <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+               ></span>
+               <span class="visually-hidden">Next</span>
+            </button>
+         </div>
+      </div>
+      <!-- Carousel End -->
+
+      
+      <faidahq-facts></faidahq-facts>
+      <!-- About Start -->
+      <div class="container-fluid py-5 my-5">
+         <div class="container pt-5">
+            <div class="row g-5">
+               <div
+                  class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                  data-wow-delay=".3s"
+               >
+                  <div class="h-100 position-relative">
+                     <img
+                        src="/img/about-1.jpg"
+                        class="img-fluid w-75 rounded"
+                        alt=""
+                        style="margin-bottom: 25%"
+                     />
+                     <div
+                        class="position-absolute w-75"
+                        style="top: 25%; left: 25%"
+                     >
+                        <img
+                           src="/img/about-2.jpg"
+                           class="img-fluid w-100 rounded"
+                           alt=""
+                        />
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                  data-wow-delay=".5s"
+               >
+                  <h5 class="text-primary">About FaidaHQ</h5>
+                  <h1 class="mb-4">
+                     We're Building the Operating System for Modern Business
+                  </h1>
+                  <p>
+                     Running a business is hard. You're juggling inventory,
+                     chasing payments, managing staff, posting on social media,
+                     and trying to find time to actually grow. Most tools solve
+                     one piece — then you're stuck copying data between five
+                     different apps at midnight.
+                  </p>
+                  <p class="mb-4">
+                     FaidaHQ fixes that. We built one platform where every part
+                     of your business lives — sales, stock, accounting,
+                     customers, staff, and more. No switching tabs. No missing
+                     numbers. Just a clear view of your business, every single
+                     day.
+                  </p>
+                  <a
+                     href="/about/"
+                     class="btn btn-secondary rounded-pill px-5 py-3 text-white"
+                     >Our Story</a
+                  >
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Services Start -->
+      <div class="container-fluid services py-5 mb-5">
+         <div class="container">
+            <div
+               class="text-center mx-auto pb-5 wow fadeIn"
+               data-wow-delay=".3s"
+               style="max-width: 600px"
+            >
+               <h5 class="text-primary">What We Offer</h5>
+               <h1>5 Services. One Expert. Zero Guesswork.</h1>
+            </div>
+            <div class="row g-5 services-inner">
+               <faidahq-service-card
+                  icon="fas fa-globe"
+                  title="Web Development"
+                  description="Custom web applications tailored to your business needs. Responsive, fast, and built to convert visitors into customers."
+                  href="/service-web-development/"
+                  wow-delay=".3s">
+               </faidahq-service-card>
+               <faidahq-service-card
+                  icon="fas fa-cogs"
+                  title="Automation"
+                  description="Streamline your workflows with custom automation solutions. Stop doing manually what machines can do better and faster."
+                  href="/service-automation/"
+                  wow-delay=".5s">
+               </faidahq-service-card>
+               <faidahq-service-card
+                  icon="fas fa-phone-alt"
+                  title="USSD App Development"
+                  description="Lightweight, accessible USSD applications for seamless mobile interaction — no internet required."
+                  href="/service-ussd/"
+                  wow-delay=".7s">
+               </faidahq-service-card>
+               <faidahq-service-card
+                  icon="fas fa-robot"
+                  title="AI Integration"
+                  description="Incorporate AI and machine learning into your products. Smarter decisions backed by data and intelligent automation."
+                  href="/service-ai-integration/"
+                  wow-delay=".3s">
+               </faidahq-service-card>
+               <faidahq-service-card
+                  icon="fas fa-mobile-alt"
+                  title="Mobile App Development"
+                  description="Progressive Web Apps and native mobile experiences that work beautifully on any device, anywhere."
+                  href="/service-mobile/"
+                  wow-delay=".5s">
+               </faidahq-service-card>
+            </div>
+         </div>
+      </div>
+      <!-- Services End -->
+
+      <!-- Blog Start -->
+      <!-- <div class="container-fluid blog py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">FaidaHQ Insights</h5>
+                    <h1>Tips & Stories for Business Owners</h1>
+                </div>
+                <div class="row g-5 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".3s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="/img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Operations</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By FaidaHQ Team</h5>
+                                <span class="text-secondary">12 January 2025</span>
+                                <p class="py-2">How a Nairobi retail shop cut stock losses by 40% after switching to automated inventory tracking.</p>
+                            </div>
+                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>Comments</small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".5s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="/img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Growth</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By FaidaHQ Team</h5>
+                                <span class="text-secondary">3 March 2025</span>
+                                <p class="py-2">Turn your social media into a real sales channel — without spending hours on content every week.</p>
+                            </div>
+                            <div class="blog-coment d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>Comments</small></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="blog-item position-relative bg-light rounded">
+                            <img src="/img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            <span class="position-absolute px-4 py-3 bg-primary text-white rounded" style="top: -28px; right: 20px;">Product</span>
+                            <div class="blog-btn d-flex justify-content-between position-relative px-3" style="margin-top: -75px;">
+                                <div class="blog-icon btn btn-secondary px-3 rounded-pill my-auto">
+                                    <a href="" class="btn text-white ">Read More</a>
+                                </div>
+                                <div class="blog-btn-icon btn btn-secondary px-4 py-3 rounded-pill ">
+                                    <div class="blog-icon-1">
+                                        <p class="text-white px-2">Share<i class="fa fa-arrow-right ms-3"></i></p>
+                                    </div>
+                                    <div class="blog-icon-2">
+                                        <a href="" class="btn me-1"><i class="fab fa-facebook-f text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-twitter text-white"></i></a>
+                                        <a href="" class="btn me-1"><i class="fab fa-instagram text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-content text-center position-relative px-3" style="margin-top: -25px;">
+                                <img src="/img/admin.jpg" class="img-fluid rounded-circle border border-4 border-white mb-3" alt="">
+                                <h5 class="">By FaidaHQ Team</h5>
+                                <span class="text-secondary">18 May 2025</span>
+                                <p class="py-2">Why offline-first matters: how USSD access keeps businesses running even when the internet cuts out.</p>
+                            </div>
+                            <div class="blog-coments d-flex justify-content-between px-4 py-2 border bg-primary rounded-bottom">
+                                <a href="" class="text-white"><small><i class="fas fa-share me-2 text-secondary"></i>Share</small></a>
+                                <a href="" class="text-white"><small><i class="fa fa-comments me-2 text-secondary"></i>Comments</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+      <!-- Blog End -->
+
+      <!-- Featured Projects Start -->
+      <div class="container-fluid py-5 my-5">
+         <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px">
+               <h5 class="text-primary">What We've Built</h5>
+               <h1>Featured Work</h1>
+            </div>
+            <div class="row g-5">
+               <div class="col-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                  <div class="services-item bg-light">
+                     <img src="/img/automation-system.png" alt="Automation System" class="w-100 rounded-top" style="height: 200px; object-fit: cover" />
+                     <div class="p-4">
+                        <h5 class="mb-2">Automation System</h5>
+                        <p class="text-muted mb-3">Streamlines workflow by fetching data from Airtable into Google Sheets, processing it via automation, and sending it back.</p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">Airtable</span>
+                           <span class="badge bg-secondary me-1">Google Sheets</span>
+                           <span class="badge bg-secondary me-1">Automation</span>
+                        </div>
+                        <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                  <div class="services-item bg-light">
+                     <img src="/img/ussd-application.png" alt="USSD Application" class="w-100 rounded-top" style="height: 200px; object-fit: cover" />
+                     <div class="p-4">
+                        <h5 class="mb-2">USSD Application</h5>
+                        <p class="text-muted mb-3">An evolving application providing lightweight record-keeping services to streamline small business activities.</p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">USSD</span>
+                           <span class="badge bg-secondary me-1">Record-Keeping</span>
+                           <span class="badge bg-secondary me-1">Mobile</span>
+                        </div>
+                        <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                  <div class="services-item bg-light">
+                     <img src="/img/broadpack.png" alt="Broadpack Hotels" class="w-100 rounded-top" style="height: 200px; object-fit: cover" />
+                     <div class="p-4">
+                        <h5 class="mb-2">Broadpack Hotels</h5>
+                        <p class="text-muted mb-3">Modern hotel booking and management website with room reservations, amenities showcase, and customer service integration.</p>
+                        <div class="mb-3">
+                           <span class="badge bg-secondary me-1">Hospitality</span>
+                           <span class="badge bg-secondary me-1">Booking System</span>
+                        </div>
+                        <a href="https://broadparkhotels.co.ke" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="text-center mt-5 wow fadeIn" data-wow-delay=".3s">
+               <a href="/projects/" class="btn btn-secondary text-white px-5 py-3 rounded-pill">View All Projects &rarr;</a>
+            </div>
+         </div>
+      </div>
+      <!-- Featured Projects End -->
+
+      <!-- Testimonials Start -->
+      <div class="container-fluid bg-secondary py-5">
+         <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px">
+               <h5 class="text-primary">Client Reviews</h5>
+               <h1 class="text-white">What Clients Say</h1>
+            </div>
+            <div class="row g-5">
+               <div class="col-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                  <div class="services-item bg-light p-4">
+                     <p class="fst-italic mb-4">"The tailored solutions provided transformed our workflow at Betafits. His expertise in automation has driven our growth and efficiency."</p>
+                     <div class="d-flex align-items-center">
+                        <div class="btn-square bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:46px;height:46px">
+                           <span class="text-white fw-bold">M</span>
+                        </div>
+                        <div>
+                           <h6 class="mb-0">Mattew Prisco</h6>
+                           <small class="text-muted">CEO, Betafits</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                  <div class="services-item bg-light p-4">
+                     <p class="fst-italic mb-4">"Partnering with this developer was a turning point for Hub Agritech. Their innovative approach helped us streamline operations and achieve remarkable results."</p>
+                     <div class="d-flex align-items-center">
+                        <div class="btn-square bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:46px;height:46px">
+                           <span class="text-white fw-bold">L</span>
+                        </div>
+                        <div>
+                           <h6 class="mb-0">Lilian Oyugi</h6>
+                           <small class="text-muted">CEO, Hub Agritech</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                  <div class="services-item bg-light p-4">
+                     <p class="fst-italic mb-4">"His commitment to excellence brought a fresh perspective to Top Tier Writers. Custom solutions enhanced our workflow and boosted team productivity."</p>
+                     <div class="d-flex align-items-center">
+                        <div class="btn-square bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width:46px;height:46px">
+                           <span class="text-white fw-bold">J</span>
+                        </div>
+                        <div>
+                           <h6 class="mb-0">James Mwaniki</h6>
+                           <small class="text-muted">Managing Director, Top Tier Writers</small>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Testimonials End -->
+
+      <!-- Contact Start -->
+      <div class="container-fluid py-5 mb-5">
+         <div class="container">
+            <div
+               class="text-center mx-auto pb-5 wow fadeIn"
+               data-wow-delay=".3s"
+               style="max-width: 600px"
+            >
+               <h5 class="text-primary">Get In Touch</h5>
+               <h1 class="mb-3">Questions? We're Here.</h1>
+            </div>
+            <div class="contact-detail position-relative p-4 p-md-5">
+               <div class="row g-5 mb-5 justify-content-center">
+                  <div
+                     class="col-12 col-lg-6 col-xl-4 wow fadeIn"
+                     data-wow-delay=".3s"
+                  >
+                     <div class="d-flex bg-light p-3 rounded">
+                        <div
+                           class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                           style="width: 64px; height: 64px"
+                        >
+                           <i class="fas fa-map-marker-alt text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                           <h4 class="text-primary">Location</h4>
+                           <a href="#" class="h5">Nairobi, Kenya</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="col-12 col-lg-6 col-xl-4 wow fadeIn"
+                     data-wow-delay=".5s"
+                  >
+                     <div class="d-flex bg-light p-3 rounded">
+                        <div
+                           class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                           style="width: 64px; height: 64px"
+                        >
+                           <i class="fa fa-phone text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                           <h4 class="text-primary">Call Us</h4>
+                           <a
+                              class="h5"
+                              href="tel:+254707317185"
+                              target="_blank"
+                              >+254 741 984 517</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="col-12 col-lg-6 col-xl-4 wow fadeIn"
+                     data-wow-delay=".7s"
+                  >
+                     <div class="d-flex bg-light p-3 rounded">
+                        <div
+                           class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                           style="width: 64px; height: 64px"
+                        >
+                           <i class="fa fa-envelope text-white"></i>
+                        </div>
+                        <div class="ms-3">
+                           <h4 class="text-primary">Email Us</h4>
+                           <a
+                              class="h5"
+                              href="mailto:info@faidahq.com"
+                              target="_blank"
+                              >info@faidahq.com</a
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row g-5">
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                     <div class="p-4 p-md-5 h-100 rounded contact-map">
+                        <iframe
+                           class="rounded w-100 h-100"
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19036281522!2d36.70730994179689!3d-1.3028617992618888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                           style="border: 0; min-height: 300px"
+                           allowfullscreen=""
+                           loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                     <div class="p-4 p-md-5 rounded contact-form">
+                        <h4 class="mb-4">
+                           Send us a message and we'll get back to you within
+                           one business day.
+                        </h4>
+                        <div class="mb-4">
+                           <input
+                              type="text"
+                              class="form-control border-0 py-3"
+                              placeholder="Your Name"
+                           />
+                        </div>
+                        <div class="mb-4">
+                           <input
+                              type="email"
+                              class="form-control border-0 py-3"
+                              placeholder="Your Email"
+                           />
+                        </div>
+                        <div class="mb-4">
+                           <input
+                              type="text"
+                              class="form-control border-0 py-3"
+                              placeholder="Subject"
+                           />
+                        </div>
+                        <div class="mb-4">
+                           <textarea
+                              class="w-100 form-control border-0 py-3"
+                              rows="6"
+                              cols="10"
+                              placeholder="Message"
+                           ></textarea>
+                        </div>
+                        <div class="text-start">
+                           <button
+                              class="btn bg-primary text-white py-3 px-5"
+                              type="button"
+                           >
+                              Send Message
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Contact End -->
+
+      
+      <faidahq-footer></faidahq-footer>
+      <!-- Back to Top -->
+      <a
+         href="#"
+         class="btn btn-secondary btn-square rounded-circle back-to-top"
+         ><i class="fa fa-arrow-up text-white"></i
+      ></a>
+
+      <!-- JavaScript Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/lib/wow/wow.min.js"></script>
+      <script src="/lib/easing/easing.min.js"></script>
+      <script src="/lib/waypoints/waypoints.min.js"></script>
+
+      <!-- Template Javascript -->
+            <!-- Web Components -->
+      <script src="/js/components.js"></script>
+      <script src="/js/main.js"></script>
+   </body>
+</html>
