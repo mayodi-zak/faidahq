@@ -547,3 +547,110 @@ html, body { overflow-x: hidden; }
 }
 
 /*** Mobile Responsive End ***/
+
+
+/*** Project & Service Card Improvements Start ***/
+
+/* 1. Unscoped base card — applies everywhere .services-item is used */
+.services-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, .12);
+    border-radius: 10px;
+    position: relative;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+/* overflow:hidden only where images need clipping — NOT on service-list icon cards
+   (avoids clipping the ::after overlay animation on /service/ page) */
+.project-card .services-item,
+.service-sidebar-card {
+    overflow: hidden;
+}
+
+/* 2. Hover lift — scoped to project cards only */
+.project-card .services-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(79, 70, 229, .18);
+}
+
+/* 3. Badge chip style — overrides Bootstrap solid green without any HTML changes */
+.badge.bg-secondary {
+    background-color: rgba(16, 185, 129, .12) !important;
+    color: #065f46 !important;
+    border: 1px solid rgba(16, 185, 129, .35);
+    font-weight: 500;
+    font-size: 0.72rem;
+    padding: .35em .65em;
+    border-radius: 20px;
+}
+
+/* 4. Category tag overlaid on card image top-left */
+.card-category-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 3;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .28em .7em;
+    border-radius: 20px;
+    pointer-events: none;
+    color: #fff;
+    line-height: 1.4;
+}
+.card-category-tag.cat-web        { background-color: rgba(79, 70, 229, .85); }
+.card-category-tag.cat-automation { background-color: rgba(234, 88, 12, .85); }
+.card-category-tag.cat-ussd       { background-color: rgba(124, 58, 237, .85); }
+.card-category-tag.cat-mobile     { background-color: rgba(6, 182, 212, .85); }
+
+/* 5a. Service sidebar top accent border */
+.service-sidebar-card {
+    border-top: 4px solid var(--bs-primary);
+}
+
+/* 5b. Service sidebar icon circle */
+.service-icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(79, 70, 229, .08);
+    border: 2px solid rgba(79, 70, 229, .18);
+    margin-bottom: 1.5rem;
+}
+.service-icon-circle .fa-7x {
+    font-size: 3.2rem;
+    margin-bottom: 0 !important;
+}
+
+/* 5c. Sidebar feature list with FA checkmarks via pseudo-element */
+.service-feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+.service-feature-list li {
+    padding: .3rem 0 .3rem 1.75rem;
+    position: relative;
+}
+.service-feature-list li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--bs-secondary);
+    position: absolute;
+    left: 0;
+    top: .35rem;
+    font-size: .85rem;
+}
+
+/* 6. Card action area divider */
+.card-actions {
+    border-top: 1px solid rgba(0, 0, 0, .08);
+    padding-top: .75rem;
+    margin-top: .25rem;
+}
+
+/*** Project & Service Card Improvements End ***/

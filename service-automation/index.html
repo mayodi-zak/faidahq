@@ -19,7 +19,7 @@
       <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
          <div class="spinner-grow text-primary" role="status"></div>
       </div>
-      
+
       <faidahq-navbar active="services"></faidahq-navbar>
       <div class="container-fluid page-header py-5">
          <div class="container text-center py-5">
@@ -38,13 +38,15 @@
          <div class="container">
             <div class="row g-5 align-items-start">
                <div class="col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                  <div class="services-item bg-light h-100">
+                  <div class="services-item bg-light h-100 service-sidebar-card">
                      <div class="p-4 text-center">
                         <div class="service-info-icon">
-                           <i class="fas fa-cogs fa-7x mb-4 text-primary"></i>
+                           <div class="service-icon-circle">
+                              <i class="fas fa-cogs fa-7x text-primary"></i>
+                           </div>
                            <h4 class="mb-3">Automation</h4>
                            <p class="mb-4">Streamline your workflows with custom automation solutions. Stop doing manually what machines can do better and faster.</p>
-                           <ul class="text-start mb-4 ps-3">
+                           <ul class="service-feature-list text-start mb-4">
                               <li>Workflow Automation</li>
                               <li>Data Integration</li>
                               <li>Efficiency Boost</li>
@@ -59,25 +61,31 @@
                <div class="col-lg-8 wow fadeIn" data-wow-delay=".5s">
                   <h5 class="text-primary mb-4">Projects in This Service</h5>
                   <div class="row g-4">
-                     <div class="col-12 col-md-6">
+                     <div class="col-12 col-md-6 project-card">
                         <div class="services-item bg-light h-100">
+                           <span class="card-category-tag cat-automation">Automation</span>
                            <img src="/img/automation-system.png" alt="Automation System" class="w-100 rounded-top" style="height: 180px; object-fit: cover" />
-                           <div class="p-3">
+                           <div class="p-4">
                               <h6 class="mb-2">Automation System</h6>
                               <p class="text-muted small mb-2">Streamlines workflow by fetching data from Airtable into Google Sheets, processing it via automation, and sending it back.</p>
                               <div class="mb-2"><span class="badge bg-secondary me-1">Airtable</span><span class="badge bg-secondary me-1">Google Sheets</span><span class="badge bg-secondary me-1">Automation</span></div>
-                              <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                              <div class="card-actions">
+                                 <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     <div class="col-12 col-md-6">
+                     <div class="col-12 col-md-6 project-card">
                         <div class="services-item bg-light h-100">
+                           <span class="card-category-tag cat-automation">Automation</span>
                            <img src="/img/web-scraping-bot.png" alt="Web Scraping Bot" class="w-100 rounded-top" style="height: 180px; object-fit: cover" />
-                           <div class="p-3">
+                           <div class="p-4">
                               <h6 class="mb-2">Web Scraping Bot</h6>
                               <p class="text-muted small mb-2">A bot developed with Selenium and Beautiful Soup to scrape dynamic websites.</p>
                               <div class="mb-2"><span class="badge bg-secondary me-1">Selenium</span><span class="badge bg-secondary me-1">BeautifulSoup</span><span class="badge bg-secondary me-1">Python</span></div>
-                              <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill me-2">View Live</a>
+                              <div class="card-actions">
+                                 <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -87,7 +95,7 @@
          </div>
       </div>
 
-      
+
       <faidahq-footer></faidahq-footer>
       <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

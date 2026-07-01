@@ -19,7 +19,7 @@
       <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
          <div class="spinner-grow text-primary" role="status"></div>
       </div>
-      
+
       <faidahq-navbar active="services"></faidahq-navbar>
       <div class="container-fluid page-header py-5">
          <div class="container text-center py-5">
@@ -38,13 +38,15 @@
          <div class="container">
             <div class="row g-5 align-items-start">
                <div class="col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                  <div class="services-item bg-light h-100">
+                  <div class="services-item bg-light h-100 service-sidebar-card">
                      <div class="p-4 text-center">
                         <div class="service-info-icon">
-                           <i class="fas fa-mobile-alt fa-7x mb-4 text-primary"></i>
+                           <div class="service-icon-circle">
+                              <i class="fas fa-mobile-alt fa-7x text-primary"></i>
+                           </div>
                            <h4 class="mb-3">Mobile App Development</h4>
                            <p class="mb-4">Progressive Web Apps and native mobile experiences that work beautifully on any device, anywhere.</p>
-                           <ul class="text-start mb-4 ps-3">
+                           <ul class="service-feature-list text-start mb-4">
                               <li>iOS &amp; Android</li>
                               <li>Flutter &amp; React</li>
                               <li>Offline-First Architecture</li>
@@ -62,12 +64,13 @@
                   <div class="row g-4">
 
                      <!-- BiasharaThrive -->
-                     <div class="col-12 col-md-6">
+                     <div class="col-12 col-md-6 project-card">
                         <div class="services-item bg-light h-100">
+                           <span class="card-category-tag cat-mobile">Mobile</span>
                            <div class="d-flex align-items-center justify-content-center bg-light rounded-top" style="height: 180px; padding: 24px">
                               <img src="/img/biasharathrive-icon.png" alt="BiasharaThrive" class="img-fluid" style="max-height: 130px; max-width: 130px; object-fit: contain" />
                            </div>
-                           <div class="p-3">
+                           <div class="p-4">
                               <h6 class="mb-1">BiasharaThrive</h6>
                               <p class="text-muted small mb-2">Offline-first business management app for small businesses. Manage inventory, sales, and records without internet.</p>
                               <div class="mb-2">
@@ -76,7 +79,7 @@
                                  <span class="badge bg-secondary me-1">Windows</span>
                                  <span class="badge bg-secondary me-1">Android</span>
                               </div>
-                              <div class="d-flex gap-2 flex-wrap">
+                              <div class="d-flex gap-2 flex-wrap card-actions">
                                  <a href="https://apps.microsoft.com/store/detail/9NLFLW2FP3JR?cid=DevShareMCLPCB" target="_blank" class="btn btn-primary btn-sm rounded-pill">
                                     <i class="fab fa-windows me-1"></i>Desktop Version
                                  </a>
@@ -89,14 +92,17 @@
                      </div>
 
                      <!-- 2D Shooter Game -->
-                     <div class="col-12 col-md-6">
+                     <div class="col-12 col-md-6 project-card">
                         <div class="services-item bg-light h-100">
+                           <span class="card-category-tag cat-mobile">Mobile</span>
                            <img src="/img/2d-shooter-game.png" alt="2D Shooter Game" class="w-100 rounded-top" style="height: 180px; object-fit: cover" />
-                           <div class="p-3">
+                           <div class="p-4">
                               <h6 class="mb-2">2D Shooter Game</h6>
                               <p class="text-muted small mb-2">A JavaScript-based 2D shooter game created using HTML, CSS, and JavaScript.</p>
                               <div class="mb-2"><span class="badge bg-secondary me-1">JavaScript</span><span class="badge bg-secondary me-1">HTML</span><span class="badge bg-secondary me-1">Game Dev</span></div>
-                              <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill me-2">View Live</a>
+                              <div class="card-actions">
+                                 <a href="https://mayodi.help" target="_blank" class="btn btn-primary btn-sm rounded-pill">View Live</a>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -107,7 +113,7 @@
          </div>
       </div>
 
-      
+
       <faidahq-footer></faidahq-footer>
       <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
