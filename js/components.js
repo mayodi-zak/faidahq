@@ -42,7 +42,7 @@ class FaidahNavbar extends HTMLElement {
         <div class="container">
           <nav class="navbar navbar-dark navbar-expand-lg py-0">
             <a href="/" class="navbar-brand">
-              <img src="/img/logo-white.png" alt="FaidaHQ" style="height: 100px" />
+              <img src="/img/logo-white.png" alt="FaidaHQ" style="height: 55px; max-width: 100%; object-fit: contain;" />
             </a>
             <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
               <span class="navbar-toggler-icon"></span>
@@ -83,7 +83,7 @@ class FaidahFooter extends HTMLElement {
           <div class="row g-5">
             <div class="col-12 col-md-6 col-lg-3">
               <a href="/">
-                <img src="/img/logo-white.png" alt="FaidaHQ" style="height: 100px" />
+                <img src="/img/logo-white.png" alt="FaidaHQ" style="height: 55px; max-width: 100%; object-fit: contain;" />
               </a>
               <p class="mt-4 text-light">Your business HQ. Every profit, every day. The all-in-one platform built for businesses that want to run smarter and grow faster.</p>
               <div class="d-flex hightech-link">
