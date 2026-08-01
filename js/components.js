@@ -106,9 +106,9 @@ class FaidahFooter extends HTMLElement {
             <div class="col-12 col-md-6 col-lg-3">
               <a href="#" class="h3 text-secondary">Support</a>
               <div class="mt-4 d-flex flex-column help-link">
-                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
-                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms of Use</a>
-                <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQs</a>
+                <a href="/privacy/" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
+                <a href="/terms/" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms of Use</a>
+                <a href="/contact/" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FAQs</a>
                 <a href="/contact/" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact Support</a>
               </div>
             </div>
